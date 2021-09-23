@@ -62,8 +62,8 @@ function tweetQuote() {
 }
 
 //Event Lsiteners
-newQuoteBtn.addEventListener("click", newQuote);
-twitterBtn.addEventListener("click", tweetQuote);
+/*newQuoteBtn.addEventListener("click", newQuote);
+twitterBtn.addEventListener("click", tweetQuote);*/
 
 //On Load
 getQuotes();
@@ -110,18 +110,15 @@ function setBgGreet() {
 
   if (hour < 12) {
     // Morning
-    document.body.style.backgroundImage =
-      "url('https://i.ibb.co/7vDLJFb/morning.jpg')";
+    document.body.style.backgroundImage = "url('./images/beach.jpg')";
     greeting.textContent = "Good Morning, Jason ";
   } else if (hour < 18) {
     // Afternoon
-    document.body.style.backgroundImage =
-      "url('https://i.ibb.co/3mThcXc/afternoon.jpg')";
+    document.body.style.backgroundImage = "url('./images/golf.jpg')";
     greeting.textContent = "Good Afternoon, Jason ";
   } else {
     // Evening
-    document.body.style.backgroundImage =
-      "url('https://i.ibb.co/924T2Wv/night.jpg')";
+    document.body.style.backgroundImage = "url('./images/night2.jpg')";
     greeting.textContent = "Good Evening, Jason ";
     document.body.style.color = "white";
   }
